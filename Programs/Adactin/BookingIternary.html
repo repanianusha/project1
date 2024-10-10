@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Booking Iternary</title>
+    <style>
+        body{
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+            }
+            .totalBody{
+                width: 100%;
+                border: 2px solid black;
+            }
+      .md{
+        display: grid;
+        grid-template-columns: auto auto;
+       }
+      #image{
+        text-align: right;
+      }
+      .menu{
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: lightblue;
+      }
+      .smenu{
+         display: grid; 
+         grid-template-columns: auto auto auto auto auto auto;
+         column-gap: 0px;
+         margin-top: 15px;
+      }
+      #smenu{
+        text-align: right;
+      }
+      .item1{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 5px;
+      }
+      #textb{
+        margin-top: 20px;
+        text-align: right;
+      }
+      #textb input[type="text"],input[type="submit"]{
+        padding: 5px;
+      }
+     .item{
+        display: grid;
+        grid-template-columns:repeat(14,auto);
+        background-color:lightgray;
+        padding: 10px;
+     }
+    .total{
+        background-color: rgb(245, 241, 241);
+        height: 1000px;
+        border: 4px solid lightblue;
+    }
+    .btns{
+        padding: 20px;
+        text-align: center;
+    }
+    .btns input[type="submit"]{
+       padding: 5px;
+        margin-left: 10px;
+    }
+
+    </style>
+    </head>
+    <body>
+       <div class="totalBody">
+          <div class="md">
+             <div>
+              <img src="../../images/logo.png" style="width: 200px; height: 150px;">
+             </div>
+             <div id="image">
+               <img src="../../images/loginPage.png" style="height: 150px;">
+             </div>
+          </div>
+          <div class="total">
+             <div class="menu">
+                  <div class="sbmenu">
+                    <p>Welcome to Adactin Group of Hotels</p>                
+                   </div>
+                    <div class="smenu" id="smenu">
+                        <div>Welcome to Anusha |</div>
+                        <div><a href="./Login.html">Login Page |</a></div>
+                        <div><a href="./SearchHotel.html">Search Hotel Page |</a></div>
+                        <div><a href="">Booked Iternary |</a></div>
+                        <div><a href="https://adactinhotelapp.com/ForgotPassword.php">Change Password |</a></div>
+                        <div><a href="./Login.html">Logout</a></div>
+                    </div>
+             </div>
+          <div class="item1">
+            <div><h3>Booked Iternary</h3></div>
+            <div id="textb">Search Order Id <input type="text" size="30"><input type="submit" value="Go" size="10"></div>
+          </div>
+        <div class="item">
+            <div><input type="checkbox"></div>
+            <div>Order Id</div>
+            <div>Cancel</div>
+            <div>Hotel Name</div>
+            <div>Location</div>
+            <div>Rooms</div>
+            <div>First Name</div>
+            <div>LastName</div>
+            <div>Arrival Date</div>
+            <div>Departure Date</div>
+            <div>No.of Days</div>
+            <div>Rooms Type</div>
+            <div>Price Per Night</div>
+            <div>Total Price (incl. GST)</div>
+        </div>
+        <div class="btns">
+            <div><input type="submit" value="Cancel Selected"><a href="./SearchHotel.html"><input type="submit" value="SearchHotel"></a><a href="./Login.html"><input type="submit" value="Logout"></a></div>
+        </div>
+       </div>
+
+    </div>
+    </body>
+</html>

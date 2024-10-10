@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book A Hotel</title>
+        <style>
+            body{
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                font-size: 24px;
+            }
+            header{
+                width: 350%;
+            }
+            a{
+                text-decoration: none;
+            }
+            #page{
+              width: 100%;
+              margin: 0px;
+            }
+            .main{
+                display: flex;
+                flex-direction: row;
+                column-gap:20%;
+                 /* margin:0px; */
+            }
+            #image{
+                align-items: end;
+               }
+            .subpage{
+                background-color: antiquewhite;
+                width: 100%;
+                height: fit-content;
+            }
+            .submenu{
+                background-color: skyblue;
+                width: 99%;
+                display: grid;
+                grid-template-columns: auto auto;
+                left: 70%;
+                padding: 10px;
+            }
+            .menus{
+                display: flex;
+                flex-direction: row;
+                margin-top: 0%;
+                margin-left: 20%;
+                /* flex-wrap: wrap; */
+                width: fit-content;
+                /* justify-content: right; */
+            }
+            .download{
+                width: fit-content;
+                font-size: 24px;
+                margin-left: 0px;
+                /* align-items: right; */
+                /* margin-right: 10px; */
+            }
+            .download h4{
+                color: blue;
+                font-weight: bold;
+                margin-top: 0px;
+              }
+              .download p{
+               margin-top: 0px;
+               margin-left: 10px;
+              }
+            .md{
+                display: grid;
+                grid-template-columns:85% 15%;
+                border: 4px solid rgb(113, 113, 219);
+                margin-right:0px;
+                width: fit-content;
+            }
+            h3,p{
+              display: inline-block;
+              margin-left: 20px;
+            }
+            #Element{
+                display:grid;
+                align-items: right;
+                grid-template-columns: 20% 40%;
+                row-gap: 20px;
+                padding: 2%;
+            }
+            select option{
+                font-size: 24px;
+            }
+            label{
+              margin-left: 10%;
+            }
+            select{
+                width: 50%;
+                padding: 2%;
+            }
+          input[type='date']{
+              width:46%;
+              height: fit-content;
+              padding: 2%;
+            }
+            input[type='submit']:hover{
+                cursor: pointer;
+                background-color: lightblue;
+            }
+            input[type='submit']{
+              position: relative;
+             margin-left: 10px;
+             padding: 20px;
+             width: 20%;
+            }
+            .bot{
+              margin-top: 150%;
+            }
+
+        </style>
+    </head>
+    <body>
+
+<div id="Page">
+    <header>
+    <div class="main">
+        <div><img src="../../images/logo.png" style="height: 100%; justify-content: start;"></div>
+       <div><img id="imgage" src="../../images/loginPage.png" style="height: 100%;width: 120%; justify-content: right;"></div>
+    </div>
+    </header>
+<div class="md">
+    <div class="subpage">
+        <div class="submenu">
+            <div class="welcome">
+               <p>Welcome to Adactin Group of Hotels</p>
+            </div>
+            <div class="menus">
+                <div>Welcome to Anusha|</div>
+                <div><a href="./Login.html">Login Page|</a></div>
+                <div><a href="./SearchHotel.html">Search Hotel Page|</a></div>
+                <div><a href="">Booked Iternary|</a></div>
+                <div><a href="https://adactinhotelapp.com/ForgotPassword.php">Change Password|</a></div>
+                <div><a href="./Login.html">Logout</a></div>
+            </div>
+        </div>
+        <div class="form">
+             <h3>Search Hotel</h3><p>(Fields marked with Red asterix (*) are mandatory)</p>
+             <div id="Element">
+             <div><label>Location<span style="color: red;">*</span></label></div>
+             <div><select id="list">
+               <option>-Select Location-</option>
+               <option>Sydney</option>
+               <option>New Yark</option>
+               <option>Melbourne</option>
+               <option>London</option>
+               <option>Paris</option></select></div>
+             <div><label>Hotels<span style="color: red;">*</span></label></div>
+             <div><select id="list">
+               <option>-Select Hotel-</option>
+               <option>Hotel Creek</option>
+               <option>Hotel Sunshine</option>
+               <option>Hotel Hervey</option>
+               <option>Hotel Cornice</option></select></div>
+             <div><label>Room Type<span style="color: red;">*</span></label></div>
+             <div><select id="list">
+               <option>-Select Room Type-</option>
+               <option>Super Deluxe</option>
+               <option>Super Luxury</option>
+               <option>Double</option>
+               <option>Standard</option></select></div>
+             <div><label>Number of Rooms <span style="color: red;">*</span></label></div>
+             <div><select id="list">
+               <option>0-None</option>
+               <option>1-One</option>
+               <option>2-Two</option>
+               <option>3-Three</option>
+               <option>4-Four</option></select></div>
+            <div><label>Check In Date <span style="color: red;">*</span></label></div>
+            <div><input type="date"> (dd/mm/yyyy) </div>
+             <div><label>Check Out Date <span style="color: red;">*</span></label></div>   
+             <div><input type="date">(dd/mm/yyyy) </div>
+             <div><label>Adults per Room</label></div>
+             <div><select id="list">
+               <option>0-None</option>
+               <option>1-One</option>
+               <option>2-Two</option>
+               <option>3-Three</option>
+               <option>4-Four</option></select></div>
+             <div><label>Children per Room</label></div>
+             <div><select id="list">
+             <option>0-None</option>
+             <option>1-One</option>
+             <option>2-Two</option>
+             <option>3-Three</option>
+             <option>4-Four</option></select>
+             </div>
+                 <div></div>
+                 <div><a href="./SelectHotelPage.html"><input type="submit" value="Search"></a><input type="submit" value="Reset"></div>
+        </div>  
+    </div> 
+  </div>
+    <div class="download">
+        <h4>Adactin Hotel Mobile App</h4>
+        <p><a href="https://adactinhotelapp.com/resources/AdactinHotelApp_SetupGuide.pdf">Download</a> the Hotel Mobile App and extend your experience. Click to know more about how to get the app on Android or IOS.
+        </p>
+        <h4>HotelApp Web Services</h4>
+        <p>Access Hotel App SOAP and Rest Services to learn web services testing<a href="https://adactinhotelapp.com/HotelAdactinWebServices/">Click</a>to know more</p>
+        <h4>Sample TestCases</h4>
+        <p><a href="https://adactinhotelapp.com/resources/Sample-TestCases_HotelApplication.pdf">Download</a> a complete set of readymade sample TEST CASES for this application. Enjoy automation!    </p> 
+        <h4>Known Defects</h4>
+        <p><a href="https://adactinhotelapp.com/resources/KnownDefects_HotelApp.pdf">Download</a> list of known defects for this application.
+        </p>
+        <h4>Book On Automation</h4>
+        <div id="bottom">
+        <div class="bot">
+<h4>About Adactin</h4>
+        <p>Get solutions for all your testing needs. Visit <a href="https://adactin.com/">www.adaction.com</a>today!</p>
+      
+        </div>
+         </div>
+     </div>
+</div>
+</body>
+</html>

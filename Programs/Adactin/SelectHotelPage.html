@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            header{
+                width: 200%;
+            }
+            .main{
+                display: flex;
+                flex-direction: row;
+                column-gap: 30%;
+            }
+            h3{
+                margin-left: 20px;
+            }
+            select,input{
+             width: 200px;
+            }
+            .Search{
+                position: absolute;
+                margin-top: 100px;
+                background-color:lightsalmon;
+                /* border: 4px solid black; */
+                width: 82%;
+                height: 300px;
+            }
+            .menu{
+                display: flex;
+               column-gap: 40%;
+            }
+            .sbmenu{
+                margin-top: 20px;
+            display: flex;
+            column-gap: 10px;
+          /* position: absolute; */
+            }
+            h3,p{
+             display: inline-block;
+            }
+            td{
+              padding: 10px;
+            }
+            input[type='submit']{
+                background-color: white;
+                width: 150px;
+                margin-left: 10px;
+            }
+            #oneDiv1{
+                display: grid;
+                grid-template-columns: 85% 15%;
+                background-color: lightseagreen;
+                border: 4px solid blue;
+            }
+            .oneDiv div{
+                width: 100px;
+                border: 2px solid white;
+                text-align: center;
+                padding: 5px;
+            }
+            .oneDiv{
+             display: grid;
+             grid-template-columns: repeat(10,100px);
+             background-color:lightgray;
+             width: fit-content;
+             column-gap: 3px;
+             margin-left: 20px;
+             }
+             .oneDiv .dif{
+                background-color: white;
+                padding: 5px;
+             }
+            input[type='radio']{
+               text-align: left;
+            
+            }
+            .but{
+                text-align: center;
+                padding: 10px;
+            }
+            .item{
+                width: 60px;
+                height: 40px;
+            }
+            .Division{
+             display: grid;
+             grid-template-columns: 85% 20%;
+             column-gap: 20%;
+            }
+            .download{
+             /* text-align: center; */
+             /* position: absolute; */
+             width: fit-content;
+             /* left: 200px; */
+             margin-top: 0px;
+             padding: 10px;
+             /* width: 19%; */
+             background-color: white;
+            }
+            .download h4{
+             position: relative;
+             margin-top: 0px;
+             color: blue;
+            }
+            .download p{
+             position: relative;
+             margin-top: 0px;
+            }
+             </style>
+         </head>
+    <body>
+        <header>
+            <div class="main">
+                <div><img src="../../images/logo.png" style="height: 100%; justify-content: start;"></div>
+               <div><img id="imgage" src="../../images/loginPage.png" style="height: 100%;width: 100%; justify-content: right;"></div>
+            </div>
+            </header>
+    <div id="oneDiv1">
+      <div class="Division">
+                <div class="menu">
+                    <div class="smenu">
+                    <p>Welcome to Adactin Group of Hotels</p>                
+                    </div>
+                    <div class="sbmenu">
+                        <div>Welcome to Anusha |</div>
+                        <div><a href="./Login.html">Login Page |</a></div>
+                        <div><a href="./SearchHotel.html">Search Hotel Page |</a></div>
+                        <div><a href="">Booked Iternary |</a></div>
+                        <div><a href="https://adactinhotelapp.com/ForgotPassword.php">Change Password |</a></div>
+                        <div><a href="./BookAHotel.html">Logout</a></div>
+                    </div>
+               </div>
+          <div class="Search">
+               <h3>Select Hotel</h3>
+               <div class="oneDiv">
+                <div class="radio">Select</div>                   
+                <div>Hotel Name</div>
+                <div>Location</div>
+                <div>Rooms</div>
+                <div>Arrival Date</div>
+                <div>Depature Date</div>
+                <div>No.of Days</div></td>
+                <div>Rooms Type</div></td>
+                <div>Price per Night</div>
+                <div>Total price (excl. GST)</div>
+               </div>
+               <div class="oneDiv">
+                <div class="dif"><input type="radio"></div>
+                <div class="dif"></div>
+                <div class="dif"></div>
+                <div class="dif"></div>
+                <div class="dif"></div>
+                <div class="dif"></div>
+                <div class="dif"></div>
+                <div class="dif"></div>
+                <div class="dif"></div>
+                <div class="dif"></div>
+               </div>
+               <div class="but">
+                <div><a href="BookAHotel.html"><input class="item" type="submit" value="Continue"></a> <input class="item" type="submit" value="Cancel"></div>
+               </div>
+          </div>
+    </div>
+          <div class="download">
+            <h4>Adactin Hotel Mobile App</h4>
+            <p><a href="https://adactinhotelapp.com/resources/AdactinHotelApp_SetupGuide.pdf">Download</a> the Hotel Mobile App and extend your experience. Click to know more about how to get the app on Android or IOS.
+            </p>
+            <h4>HotelApp Web Services</h4>
+            <p>Access Hotel App SOAP and Rest Services to learn web services testing<a href="https://adactinhotelapp.com/HotelAdactinWebServices/">Click</a>to know more</p>
+            <h4>Sample TestCases</h4>
+            <p><a href="https://adactinhotelapp.com/resources/Sample-TestCases_HotelApplication.pdf">Download</a> a complete set of readymade sample TEST CASES for this application. Enjoy automation!    </p> 
+            <h4>Known Defects</h4>
+            <p><a href="https://adactinhotelapp.com/resources/KnownDefects_HotelApp.pdf">Download</a> list of known defects for this application.
+            </p>
+            <h4>Book On Automation</h4>
+            <div id="bottom">
+            <h4>About Adactin</h4>
+            <p>Get solutions for all your testing needs. Visit <a href="https://adactin.com/">www.adaction.com</a>today!</p>
+      
+          </div>
+</div>
+    </body>
+</html>

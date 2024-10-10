@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Calculator</title>
+     <style>
+        body{
+            background-image: conic-gradient(red,blue,yellow,green,purple,grey);
+        }
+        .Calculator{
+            border: 2px solid black;
+            background-color: grey;
+            width: 300px;
+            border-radius: 10px;
+            color: white;
+            font-size: 28px;
+            box-shadow: 10px 10px 10px 10px grey;
+            margin: 50px;
+        }
+        h1{
+            color: white;
+        }
+        .symbols{
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+        }
+        input{
+            width: 290px;
+            height: 50px;
+            text-align: right;
+            font-size: 40px;
+        }
+        .value{
+            background-color: cadetblue;
+            border: 2px solid rgb(233, 227, 227);
+            padding: 10px;
+            width: 150px;
+            height: 50px;
+            margin: 2px;
+            border-radius: 50%;;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .value:hover{
+            cursor: pointer;
+            font-size:30px ;
+        }
+
+       
+     </style>
+    </head>
+    <body><center>
+        <h1>Calculator Project</h1>
+        <div class="Calculator">
+            <div class="input" >
+            <input type="text" value="0" >
+            </div>
+            <div class="symbols">
+                <button class="value">&#40;</button>
+                <button class="value">&#41;</button>
+                <button class="value">&#37; </button>
+                <button class="value">AC</button>
+            </div>
+            <div class="symbols">
+                <button class="value">&#55;</button>
+                <button class="value">&#56;</button>
+                <button class="value">&#57;</button>
+                <button class="value">&#247;</button>
+            </div>
+            <div class="symbols">
+                <button class="value">&#52;</button>
+                <button class="value">&#53;</button>
+                <button class="value">&#54;</button>
+                <button class="value">&#215;</button>
+            </div>
+            <div class="symbols">
+                <button class="value">&#49;</button>
+                <button class="value">&#50;</button>
+                <button class="value">&#51;</button>
+                <button class="value">&#45;</button>
+            </div>
+            <div class="symbols">
+                <button class="value">0</button>
+                <button class="value">&#46;</button>
+                <button class="value">&#61;</button>
+                <button class="value">&#43;</button>
+            </div>
+        </div>
+    </center>
+    </body>
+</html>

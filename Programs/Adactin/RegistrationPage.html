@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <titl>Registration Page</title>
+            <style>
+                body{
+                    font-style: "ms Comic Sants Sarif",Sans Sarif;
+                }
+                  .md{
+                display: grid;
+                grid-template-columns:repeat(2,400px);
+            }
+            .user #link{
+               position: relative;
+               /* margin-left: 200px; */
+           left: 300px;
+            }
+            .user h3,h4{
+            display: inline-block;
+            flex-direction: row;
+           }
+           #Reg{
+            display: flex;
+            flex-direction: row;
+            border: 2px solid skyblue;
+           }
+           .user{
+            width: 90%;
+            height: 400px;
+            background-color:lightblue;
+            
+           }
+           input[type='text'],input[type='password'],input[type='email']{
+            width: 250px;
+           }
+           label,input,button{
+            padding: 5px;
+            margin-left: 30px;
+           }
+           td{
+            width: fit-content;
+           }
+
+           .download{
+            width: 200px;
+            margin-left: 20px;
+           }
+           .download h4,p{
+            margin-top: 0px;
+           }
+           .download h4{
+            color: blue;
+           }
+           #bottom{
+            bottom: 0px;
+           }
+           .RB{
+            margin-top: 20px;
+            margin-left: 20px;
+            width:100px;
+           }
+            </style>
+    </head>
+    <body>
+        <div id="newUser">
+            <nav>
+                <div class="md">
+                  <div class="md1">
+                    <img src="/images/logo.png">
+                  </div>
+                  <div class="md2">
+                  <img src="/images/loginPage.png" width="900px" height="100px">
+                  </div>
+                </div>
+              </nav>
+        </div>
+        <div id="Reg">
+            <div class="user">
+              <h3>New User Registration form </h3><h4> (Fields marked with Red asterix (*) are mandatory)</h4>
+              <a id="link" href="./Project.html">Go back to Login Page</a>
+            <table>
+            <tr><td><label>Username<span style="color: red;">*</span></label></td>
+            <td><input type="text"></td></tr>
+            <tr><td><label>Password<span style="color: red;">*</span></label></td>
+            <td><input type="password"></td></tr>
+            <tr><td><label>Confirm Password <span style="color: red;">*</span></label></td>
+            <td><input type="password"></td></tr>
+            <tr><td><label>Full Name <span style="color: red;">*</span></label></td>
+            <td><input type="text"></td></tr>
+           <tr><td><label>Email Address <span style="color: red;">*</span></label></td>
+           <td><input type="email"></td></tr>
+            <tr><td><label>Terms/Conditions <span style="color: red;">*</span></label></td>
+            <td><input type="checkbox">I agree to <a href="https://www.adactin.com/HotelApp/TermsConditions.html">Terms & Conditions</a></td></tr>
+              <tr><td></td>
+            <td colspan="2"><input class="RB" type="submit" value="Register">  <input class="RB" type="submit" value="Reset"></td>
+            
+            </tr>
+            </table>
+            </div>
+        <div class="download">
+            <h4>Adactin Hotel Mobile App</h4>
+            <p><a href="https://adactinhotelapp.com/resources/AdactinHotelApp_SetupGuide.pdf">Download</a> the Hotel Mobile App and extend your experience. Click to know more about how to get the app on Android or IOS.
+            </p>
+            <h4>HotelApp Web Services</h4>
+            <p>Access Hotel App SOAP and Rest Services to learn web services testing<a href="https://adactinhotelapp.com/HotelAdactinWebServices/">Click</a>to know more</p>
+            <h4>Sample TestCases</h4>
+            <p><a href="https://adactinhotelapp.com/resources/Sample-TestCases_HotelApplication.pdf">Download</a> a complete set of readymade sample TEST CASES for this application. Enjoy automation!    </p> 
+            <h4>Known Defects</h4>
+            <p><a href="https://adactinhotelapp.com/resources/KnownDefects_HotelApp.pdf">Download</a> list of known defects for this application.
+            </p>
+            <h4>Book On Automation</h4>
+            <div id="bottom">
+            <h4>About Adactin</h4>
+            <p>Get solutions for all your testing needs. Visit <a href="https://adactin.com/">www.adaction.com</a>today!</p>
+             </div>
+        </div> 
+     </div>
+    </body>
+</html>
